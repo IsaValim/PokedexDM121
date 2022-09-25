@@ -88,6 +88,17 @@ const ObtainTypesCard = (pokemon) => {
             `
 }
 
+const showDetailsOnClick = (pokemons) => {
+  const cards = document.querySelectorAll('.card-pokemons')
+  pokemonData = pokemons
+
+  cards.forEach((card) => {
+    card.addEventListener('click', () => {
+      DetailsPokemon(card)
+    })
+  })
+}
+
 const ObtainDetailCharCard = (charIco, charName, charValue) => {
   return `
           <li>
@@ -115,17 +126,6 @@ const ObtainDataCard = (pokemon) => {
   return html
 }
 
-const showDetailsOnClick = (pokemons) => {
-  const cards = document.querySelectorAll('.card-pokemons')
-  pokemonData = pokemons
-
-  cards.forEach((card) => {
-    card.addEventListener('click', () => {
-      DetailsPokemon(card)
-    })
-  })
-}
-
 const ObtainAbilities = (pokemon) => {
   const abilities = pokemon.abilities
   let abilitiesHtml = ''
@@ -146,13 +146,6 @@ const ObtainAbilities = (pokemon) => {
             `
 }
 
-const ObtainDescription = (pokemon) => {
-  return `
-            <p class="description">
-            </p>
-            `
-}
-
 const ObtainBaseStats = (pokemon) => {
   const pokemonStats = pokemon.stats
 /* De acordo com o protótipo */
@@ -168,6 +161,13 @@ const ObtainBaseStats = (pokemon) => {
     `
 }
 
+const ObtainDescription = (pokemon) => {
+  return `
+            <p class="description">
+            </p>
+            `
+}
+
 const obtainDetailStats = (statName, statValue) => {
   return `
             <li>
@@ -180,8 +180,8 @@ const obtainDetailStats = (statName, statValue) => {
             `
 }
 
-detail.addEventListener('click', (event) => {
-  if (event.target === detail) {
+details.addEventListener('click', (event) => {
+  if (event.target === details) {
     hideDetail(event)
   }
 })
