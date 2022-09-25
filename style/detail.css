@@ -22,7 +22,7 @@
   width: 400px;
   height: 750px;
   background-color: #000000;
-  border-radius: 40px;
+  border-radius: 25px;
   overflow: auto;
 }
 
@@ -52,10 +52,10 @@
   position: absolute;
   left: 0;
   right: 0;
-  border-radius: 50px;
+  border-radius: 10px;
   display: block;
   bottom: 0;
-  margin: 20px;
+  margin: 8px;
   height: 60%;
 }
 
