@@ -1,0 +1,87 @@
+:root {
+  --black-background: #121212;
+  --white-color: #ffffff;
+  --background: #F7F7F7;
+}
+
+* {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--balck-background);
+  color: var(--white-color);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #474747;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777777;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666666;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f3f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(14, 14, 14);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(88, 88, 88);
+}
+
+.show {
+  display: block;
+}
+
+.show-flex {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  padding: 50px 30px;
+  width: 1200px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .container {
+    width: 1300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 550px;
+  }
+}

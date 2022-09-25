@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/pokemon.css">
+    <link rel="stylesheet" href="style/detail.css">
+    <script src="https://kit.fontawesome.com/1828b82998.js" crossorigin="anonymous"></script>
+    <title> Pokédex </title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="main-header">
+            <div class="pokeball-row">
+                <div class="title">
+                    <img class="pokeball" src="image/pokeball.svg" alt="Pokeball">
+                    <h1> Pokédex </h1>
+                </div>
+                
+            </div>
+            <div class="search-row">
+                <div class="search">
+                    <button id="btn-search" class="btn-search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input id="input-search" type="text" placeholder="Procurar">
+                </div>
+            </div>
+        </section>
+        <section class="pokemons">
+            <ul id="pokemon-container"></ul>
+        </section>
+        <section id="detail" class="detail-container hide">
+            <div id="detail-card" class="detail-card grass">
+                <div class="header">
+                    <div class="title-section">
+                        <button id="return-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <h1 id="title"> Squirtle </h1>
+                    </div>
+                    <p class="number">#007</p>
+                </div>
+                <img class="pokeball-icon" src="image/pokeball.svg" alt="Pokeball">
+                <div class="detail-card-info">
+                    <div class="pokemon-img-container">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                            alt="squirtle">
+                    </div>
+                    <ul class="types">
+                        <li class="water">Water</li>
+                    </ul>
+                    <h3 class="text-colored">About</h2>
+                        <ul class="char">
+                            <li>
+                                <div class="value">
+                                    <i class="fas fa-weight"></i>
+                                    <p>9 kg</p>
+                                </div>
+                                <p class="char-name">Weight</p>
+                            </li>
+                            <li>
+
+                                <div class="value">
+                                    <i class="fas fa-ruler-vertical"></i>
+                                    <p>0,5 m</p>
+                                </div>
+                                <p class="char-name">Height</p>
+                            </li>
+                            <li>
+                                <p>Torrent</p>
+                                <p class="char-name">Moves</p>
+                            </li>
+                        </ul>
+                        
+                        <ul class="stats">
+                            <li>
+                                <p class="stat-name">HP</p>
+                                <p class="stat-value">044</p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="stat-name">ATK</p>
+                                <p class="stat-value">048</p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="stat-name">DEF</p>
+                                <p class="stat-value">065</p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="stat-name">SATK</p>
+                                <p class="stat-value">050</p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="stat-name">SDEF</p>
+                                <p class="stat-value">064</p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="stat-name">SPD</p>
+                                <p class="stat-value">043</p>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </li>
+                        </ul>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/APIPokemon.js"></script>
+    <script src="js/card.js"></script>
+    <script src="js/detailsPokemon.js"></script>
+    
+</body>
+
+</html>
